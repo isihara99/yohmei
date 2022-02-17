@@ -1,0 +1,225 @@
+/* --------------
+全体構造
+-----------------*/
+a {
+  color: #000000;
+}
+a:hover {
+  color: #B6B6B6;
+}
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro','メイリオ', 'Meiryo', '游ゴシック', 'Yu Gothic', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+}
+.blue {
+  color: #8080c0;
+}
+.simple-linear {
+  height: 30px;
+  background: linear-gradient(#f8f8f8, #fff);
+}
+.others .content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 1160px;
+  margin: 30px auto 106px auto;
+}
+.others main {
+  width: 800px;
+}
+.others main img {
+  margin-bottom: 20px;
+}
+.others main p {
+  line-height: 2;
+}
+
+/* --------------
+パンくずリスト
+-----------------*/
+.others .breadcrumb ol{
+  width: 1160px;
+  margin: 0 auto 20px auto;
+}
+.others .breadcrumb{
+  letter-spacing: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.others .breadcrumb li{
+  display: inline-block;
+}
+.others .breadcrumb li::after{
+  content: ">";
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.others .breadcrumb li:last-child::after{
+  content: none;
+}
+.others .breadcrumb ol li a{
+  text-decoration: none;
+  transition: color .2s;
+}
+
+/* --------------
+ヘッダー
+-----------------*/
+header {
+  background-color: #f8f8f8;
+  height: 150px;
+}
+header .logo-access {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  height: 100px;
+  margin: 0 auto;
+}
+header h1 {
+  margin: 10px 0 0 -10px;
+}
+header .access p {
+  text-align: right;
+  margin-top: 22px;
+}
+header .global {
+  background-color: #ffffff;
+  line-height: 50px;
+  height: 50px;
+}
+header .global nav {
+  width: 1160px;
+  margin: 0 auto;
+}
+header .global nav ul {
+  display: flex;
+}
+header .global nav li a {
+  display: block;
+  text-align: center;
+  font-size: 16px;
+  text-decoration: none;
+  width: 100px;
+  transition: color .2s;
+}
+
+/* --------------
+アサイド
+-----------------*/
+aside {
+  width: 300px;
+}
+aside a img {
+  margin-bottom: 40px;
+}
+
+/* --------------
+フッター
+-----------------*/
+.footer-wrapper {
+  background-color: #f8f8f8;
+}
+footer {
+  display: flex;
+  height: 100px;
+  width: 1160px;
+  margin: 0 auto;
+}
+footer img {
+  padding-right: 50px;
+  margin:10px 0 0 -10px;
+  border-right: 1px solid #000;
+}
+footer p small {
+  margin-left: 50px;
+  line-height: 100px;
+}
+
+/* --------------
+トップページ
+-----------------*/
+#home .main-image {
+  display: flex;
+  justify-content: center;
+  width: 1160px;
+  margin: 0 auto 40px auto;
+  margin-top: 30px;
+}
+#home main {
+  width: 800px;
+}
+#home .content {
+  width: 1160px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto 150px auto;
+}
+main h2 {
+  background-color: #f8f8f8;
+  height: 55px;
+  font-size: 20px;
+  padding: 18px 0 0 20px;
+  margin-bottom: 10px;
+}
+#home main ul {
+  list-style-type: none;
+}
+#home main li {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  display: flex;
+}
+#home main li:nth-child(n+2) {
+  border-top: none;
+}
+#home main li time {
+  width: 300px;
+}
+#home main li a {
+  width: 500px;
+}
+
+/* -----------------
+学校紹介
+------------------- */
+#about main .image-p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+#about main .image-p .bottom-p {
+  width: 600px;
+}
+
+/* -----------------
+学習の特色
+------------------- */
+#education main ul {
+  list-style-type: none;
+  margin-bottom: 80px;
+  line-height: 2;
+}
+#education main ul li::before {
+  position: relative;
+  top: -2px;
+  left: 0px;
+ 
+  display: inline-block;
+ 
+  width: 10px;
+  height: 10px;
+ 
+  content: '';
+ 
+  border-radius: 0%;
+  background: #b6b6b6;
+}
